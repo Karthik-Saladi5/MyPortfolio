@@ -407,3 +407,8 @@ span {
   background: var(--white-color);
   border-radius: 50%;
 }
+
+.portfolio-layer a {
+  font-size: 2rem;
+  color: #333;
+}
