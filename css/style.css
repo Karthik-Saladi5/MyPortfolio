@@ -136,7 +136,7 @@ section {
   background: transparent;
   border: 0.2rem solid var(--main-color);
   border-radius: 50%;
-  box-shadow: 0 0.2rem 0.5rem var(--shadow-color);
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
   font-size: 2rem;
   color: var(--main-color);
   margin: 2.5rem 1.5rem 3rem 0;
@@ -413,7 +413,7 @@ span {
   color: #333;
 }
 
-.certifications-container {
+.testimonial-container {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -421,18 +421,21 @@ span {
   padding: 5rem 1rem;
 }
 
-.certifications-container .certifications-wrapper {
+.testimonial-container .testimonial-wrapper {
   position: relative;
   max-width: 90rem;
   width: 100%;
   padding: 5rem;
 }
 
-.certifications-content .certifications-slide {
+.testimonial-content .testimonial-slide {
   display: flex;
   align-items: center;
   flex-direction: column;
   background: var(--bg-color);
   border-radius: 2rem;
-  box-shadow: 0 0.1rem 0.5rem var(--shadow-color);
+  box-shadow: 0 .1rem .5rem var(--shadow-color);
+  padding: 3rem 5rem;
+  border-top: 0.8rem solid var(--main-color);
+  border-bottom: 0.8rem solid var(--main-color);
 }
