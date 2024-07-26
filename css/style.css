@@ -516,11 +516,45 @@ span {
   width: 49%;
 }
 
-.contact form textarea{
+.contact form textarea {
   resize: none;
 }
 
-.contact form .btn{
+.contact form .btn {
   margin-top: 2rem;
   cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 7%;
+  background: var(--main-color);
+}
+
+.footer-text p {
+  font-size: 1.6rem;
+  color: var(--white-color);
+}
+
+.footer-iconTop a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  background: var(--white-color);
+  border-radius: 0.8rem;
+  border: .2rem solid var(--main-color);
+  outline: .2rem solid transparent;
+}
+
+.footer-iconTop a:hover{
+  outline-color: var(--white-color);
+}
+
+.footer-iconTop a i {
+  font-size: 2.4rem;
+  color: #333;
 }
