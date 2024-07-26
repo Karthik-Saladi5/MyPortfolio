@@ -16,7 +16,7 @@
   --text-color: #333;
   --main-color: #754ef9;
   --white-color: #fdfdfd;
-  --shadow-color: Irgba(0, 0, 0, 2);
+  --shadow-color: rgba(0, 0, 0, 2);
 }
 
 html {
@@ -86,6 +86,12 @@ body {
   opacity: 0.7;
 }
 
+#menu-icon {
+  font-size: 3.6rem;
+  color: var(--text-color);
+  display: none;
+}
+
 #darkMode-icon {
   font-size: 2.4rem;
   color: var(--white-color);
@@ -136,7 +142,7 @@ section {
   background: transparent;
   border: 0.2rem solid var(--main-color);
   border-radius: 50%;
-  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.2rem 0.5rem var(--shadow-color);
   font-size: 2rem;
   color: var(--main-color);
   margin: 2.5rem 1.5rem 3rem 0;
@@ -152,7 +158,7 @@ section {
   padding: 1.2rem 2.8rem;
   background: var(--main-color);
   border-radius: 0.6rem;
-  box-shadow: 0.2rem 0.5rem var(--shadow-color);
+  box-shadow: 0 .2rem 0.5rem var(--shadow-color);
   font-size: 1.6rem;
   color: var(--white-color);
   letter-spacing: 0.1rem;
@@ -447,10 +453,10 @@ span {
 }
 
 .testimonial-slide img {
-  width: 14rem;
-  height: 14rem;
+  width: 50%;
+  height: 10%;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 10%;
   border: 0.5rem solid var(--bg-color);
   outline: 0.5rem solid var(--main-color);
 }
@@ -546,15 +552,32 @@ span {
   padding: 0.8rem;
   background: var(--white-color);
   border-radius: 0.8rem;
-  border: .2rem solid var(--main-color);
-  outline: .2rem solid transparent;
+  border: 0.2rem solid var(--main-color);
+  outline: 0.2rem solid transparent;
 }
 
-.footer-iconTop a:hover{
+.footer-iconTop a:hover {
   outline-color: var(--white-color);
 }
 
 .footer-iconTop a i {
   font-size: 2.4rem;
   color: #333;
+}
+
+/*BREAKPOINTS */
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+  .home.profession-container {
+    height: 85.8rem;
+  }
+  .home.profession-container profession-box {
+    right: -12rem;
+    height: 85.8rem;
+  }
+  .home.profession-container.overlay {
+    right: -9rem;
+  }
 }
