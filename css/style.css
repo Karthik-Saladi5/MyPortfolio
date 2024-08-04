@@ -694,6 +694,10 @@ span {
   .home-content .social-media a {
     margin: 2.5rem 0.75rem 3rem;
   }
+  .home .profession-container {
+    left: 0;
+    width: 100%;
+  }
   .home .profession-container .profession-box {
     position: fixed;
     top: 60%;
@@ -734,12 +738,11 @@ span {
     transform: rotate(240deg) translate(-115px, -450px) rotate(-240deg);
   }
 
-  .home .profession-box .circle{
+  .home .profession-box .circle {
     position: fixed;
     width: 670px;
     height: 670px;
     z-index: -1;
-
   }
   .home .profession-container .overlay {
     position: fixed;
@@ -750,39 +753,73 @@ span {
     border-width: 23.9rem;
   }
 
-  .about{
+  .about {
     flex-direction: column-reverse;
     text-align: center;
   }
 
-  .about-content h2{
+  .about-content h2 {
     text-align: center;
   }
 
-  .about-img img{
-    width: 70rem;
+  .about-img img {
+    width: 70vm;
     margin-top: -2rem;
   }
 
   .services h2,
-  .portfolio h2{
+  .portfolio h2 {
     margin-bottom: 3rem;
   }
 
-  .portfolio .portfolio-container{
-    grid-template-columns: repeat(2,1fr);
+  .portfolio .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .testimonial-container .testimonial-wrapper{
+  .testimonial-container .testimonial-wrapper {
     padding: 5rem 0;
   }
 
-  .testimonial-content .testimonial-slide{
+  .testimonial-content .testimonial-slide {
     padding: 3rem 2rem;
   }
 
   .testimonial-box .swiper-button-next,
-  .testimonial-box .swiper-button-prev{
+  .testimonial-box .swiper-button-prev {
     display: none;
+  }
+}
+
+@media(max-width: 617px) {
+  .portfolio .portfolio-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  #darkMode-icon {
+    right: 6rem;
+  }
+  .home {
+    padding: 0 3% 30rem;
+  }
+  .contact form .input-box input{
+    width: 100%;
+  }
+}
+
+@media(max-width: 365px){
+  .about-img img{
+    width: 90vw;
+  }
+  .footer{
+    flex-direction: column-reverse;
+  }
+  .footer p{
+    text-align: center;
+    margin-top: 2rem;
   }
 }
