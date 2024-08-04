@@ -200,6 +200,31 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: professionRotate 19s ease-out infinite ;
+}
+
+@keyframes professionRotate {
+  0%, 9.1% {
+    transform: rotate(0deg);
+  }
+  16.6%, 25.8% {
+    transform: rotate(-60deg);
+  }
+  33.3%, 42.5% {
+    transform: rotate(-120deg);
+  }
+  50%, 59.1% {
+    transform: rotate(-180deg);
+  }
+  66.6%, 75.8% {
+    transform: rotate(-240deg);
+  }
+  83.3%, 92.5% {
+    transform: rotate(-300deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 
 .home .profession-box .profession {
@@ -709,6 +734,7 @@ span {
     left: 0;
     border-radius: 0;
     width: 100%;
+    animation: none;
   }
   .home .profession-box .profession {
     padding: 0 13px;
